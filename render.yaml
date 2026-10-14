@@ -3,7 +3,7 @@ services:
     name: creatorly-latest-version
     env: node
     plan: free
-    buildCommand: npm run build
+    buildCommand: npm --prefix frontend install --include=dev && npm --prefix frontend run build && npm --prefix backend install
     startCommand: npm start
     healthCheckPath: /api/health
     envVars:
