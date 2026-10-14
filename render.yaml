@@ -9,4 +9,5 @@ services:
       - key: NODE_ENV
         value: production
       - key: JWT_SECRET
-        value: nexusai_production_jwt_supersecret_key_2026
+        sync: false
+
